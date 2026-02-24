@@ -1,0 +1,18 @@
+[Unit]
+Description=DevOps Test Project Backend (Node.js)
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=app
+WorkingDirectory=/opt/devops_test_project/current/backend
+EnvironmentFile=/opt/devops_test_project/shared/backend/.env
+ExecStart=/usr/bin/node /opt/devops_test_project/current/backend/server.js
+Restart=always
+RestartSec=2
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
