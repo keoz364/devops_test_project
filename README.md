@@ -102,6 +102,10 @@ sudo systemctl reload nginx
 -   Application runs under dedicated system user (`app`)
 -   No secrets stored in Git
 
+### Brute-force Protection
+
+Fail2Ban monitors SSH logs and automatically bans IP addresses after multiple failed authentication attempts.
+
 ------------------------------------------------------------------------
 
 ## 🧪 Healthcheck
