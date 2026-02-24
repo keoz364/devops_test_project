@@ -36,8 +36,8 @@ Production deploy is implemented using a release-based directory structure:
 
 /opt/devops_test_project
   ├── releases/
-  │     ├── 20250609_120101
-  │     ├── 20250609_121532
+  │     ├── 20260224_120101
+  │     ├── 20260224_121532
   │     └── ...
   ├── shared/
   │     └── backend/.env
